@@ -150,15 +150,15 @@ body {
   color: var(--clr);
 }
 
-#time div:nth-child(1)::after,
-#time div:nth-child(2)::after {
+#time div:nth-child(2)::after,
+#time div:nth-child(3)::after {
   content: ':';
   position: absolute;
-  right: -4px;
+  left: -4px;
   color: var(--clr);
 }
 
-#time div:nth-child(2)::after {
+#time div:nth-child(3)::after {
   animation: blink 1s steps(1) infinite;
 }
 
