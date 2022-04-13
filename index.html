@@ -78,7 +78,21 @@
     ></ins>
 
     <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
+      window.addEventListener('load', () => {
+ let matches = document.querySelectorAll("ins.ADSENSE");
+
+        Array.from(matches).forEach((element) => {
+            let parentElement = element.parentElement;
+            if (window.getComputedStyle(parentElement).getPropertyValue("display") === "none")  { 
+                element.remove(); 
+            } else {
+            element.classList.remove("ADSENSE");
+            element.classList.add("adsbygoogle");
+                (adsbygoogle = window.adsbygoogle || []).push({}); 
+            }
+        });
+
+});
     </script>
 
     <script src="src/script.js"></script>
