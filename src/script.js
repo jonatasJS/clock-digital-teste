@@ -22,5 +22,5 @@ setInterval(() => {
   hour.innerHTML = `${(hh / 30) < 10 ? '0' + (hh / 30) : (hh / 30)}`;
   minutes.innerHTML = `${(mm / 6) < 10 ? '0' + (mm / 6) : (mm / 6)}`;
   seconds.innerHTML = `${(ss / 6) < 10 ? '0' + (ss / 6) : (ss / 6)}`;
-  ampm.innerHTML = `${hh >= 12 ? 'PM' : 'AM'}`;
+  ampm.innerHTML = `${hh >= 12 ? 'AM' : 'PM'}`;
 }, 1000);
